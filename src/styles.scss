@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+$qls-colors:( "base": rgb(44, 62, 80), "cyan": #36cde8, "hover": #18bc9c);
+$qls-colors-arr:( 'qls-primary': map-get($qls-colors, 'base'), 'qls-cyan': map-get($qls-colors, 'cyan'), 'qls-hover': map-get($qls-colors, 'hover'));
+@each $key,
+$value in $qls-colors-arr {
+  .#{$key} {
+    background-color: $value !important;
+  }
+  .#{$key}-text {
+    color: $value !important;
+  }
+  .#{$key}-border {
+    border-color: $value !important;
+  }
+  input[type=text].#{$key}-input{
+      &:focus{
+        border: 1px solid $value !important;
+        border-bottom: 1px solid $value !important;
+        -webkit-box-shadow: 0 1px 0 0 $value !important;
+        box-shadow: 0 1px 0 0 $value !important;
+      }
+    }
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif !important;
+}
+.no-padding {
+  padding: 0px !important;
+}
+
+.no-padding-sides {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.row {
+  width: inherit;
+}
+
+.container-event-slider {
+  .carousel-indicators {
+    display: none !important;
+  }
+  .carousel-inner {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border: 5px solid #2e3f52;
+  }
+  .carousel-item{
+      height: 500px;
+      .view{
+          height: 500px;
+      }
+  }
+}
