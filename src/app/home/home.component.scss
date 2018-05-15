@@ -172,4 +172,19 @@
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   min-height: 500px;
   margin-top: 15px;
+  text-align: center;
+  .testimonial{
+    height: 450px;
+  }
+  .avatar{
+    img{
+      width: 200px;
+      height: 200px;
+      margin: 25px auto;
+    }
+  }
+  .message{
+    max-width: 80%;
+    margin:15px auto;
+  }
 }

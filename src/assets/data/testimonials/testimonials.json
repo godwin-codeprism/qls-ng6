@@ -1,1 +1,42 @@
-[{"name":"Alan Bourne","message":"My perspective as an instructional designer is: I want as many people as possible to have the tools to help them create really good quality elearning and that\u2019s something that QuickLearn offers.","image":".\/data\/testimonials\/images\/fa728ed6fa684642513fb1529e3b5b0b.jpg"},{"name":"Dino Bruster","message":"My perspective as an instructional designer is: I want as many people as possible to have the tools to help them create really good quality elearning and that\u2019s something that QuickLearn offers.","image":".\/data\/testimonials\/images\/5d0bb7e0bdada7a28ad580b9502bf9c1.jpg"},{"name":"Toby Marshall","message":"My perspective as an instructional designer is: I want as many people as possible to have the tools to help them create really good quality elearning and that\u2019s something that QuickLearn offers.","image":".\/data\/testimonials\/images\/8800bbc6d356009cdab156f349146f76.png"}]
+[
+    {
+        "name": "Vijay Nandikonda - Business Analyst",
+        "message": "The trainer was amazing. The session was very interactive and every concept was well explained with real life examples. Thank you for the training. The training facilities were very impressive. Will come back for some more trainings.",
+        "image": "./assets/data/testimonials/images/86c78c4a6343a2294ca636475629a545.jpg"
+    },
+    {
+        "name": "Yathendra Nath - Project Manager",
+        "message": "Completed one of my best training sessions. I really thank the trainer for making the course very simple and complete my PRINCE2. I recommend this institute for Knowledge training center. Thank you for providing the knowledge.",
+        "image": "./assets/data/testimonials/images/247bc983099e54872b38727ce6f53d9b.jpg"
+    },
+    {
+        "name": "Vivek Kodakandla - Sr Technical Analyst",
+        "message": "Exceptional experience! Educated professionals with high understanding of procedure. approached the centre to do with my certification, the process is flawless. Voila! I have finished it. Here u go @Quicklearnsys, I will  be back again.",
+        "image": "./assets/data/testimonials/images/64a83632d4ba65d232ee2c720031cf09.jpg"
+    },
+    {
+        "name": "Jackson David - Project Manager",
+        "message": "It was very informative and the trainer has a very excellent methods of explaining things, which helps understanding and relating things.",
+        "image": "./assets/data/testimonials/images/656f04058694c7a4288e1fdb060e335b.jpg"
+    },
+    {
+        "name": "Madhavi Chaganti - Project Manager",
+        "message": "Exceptional experience! Educated professionals with high understanding of procedure. approached the center to do with my certification, the process is flawless. Voila! i have finished it.:-).  Here u go @ QuickLearn Systems, I will  be back again.It is simply awesome. Excellent service and fast response. A very trusted enterprise. I appreciate all of the services",
+        "image": "./assets/data/testimonials/images/0413ee158a479a0caa30bcf2ea7d15fe.png"
+    },
+    {
+        "name": "Tyler Cunningham - Foreign Student",
+        "message": "Excellent and highly efficient staff! Would absolutely recommend for any certification and professional development you may have! Instructors are engaging and supportive. Facilities and resources are conducive to professional learning.",
+        "image": "./assets/data/testimonials/images/b11322c0e50097f13ae86b2a5032c675.jpg"
+    },
+    {
+        "name": "Tegala Bharadwaj - Lead Pipeline Engineer",
+        "message": "I did my PRINCE2 foundation and practitioner course in QuickLearn Systems. This training has really provided me a value for money. Tutor was very engaging and constantly interactive and never felt that I choose a wrong institute.",
+        "image": "./assets/data/testimonials/images/00c6cafbe45f82d543ce43cbb3d5616e.jpg"
+    },
+    {
+        "name": "Prashanth Jayanand - System Analyst ",
+        "message": "Awesome ITIL training sessions especially the examples from the real world scenarios. Very well organised training and exam coordination. Experienced staff.",
+        "image": "./assets/data/testimonials/images/e1401fb49556e143a7e524635c239693.jpg"
+    }
+]

@@ -139,99 +139,31 @@
 <div class="container-fluid container-testimonials">
   <!--Section: Testimonials v.2-->
   <section class="text-center pb-5">
-
-    <!--Section heading-->
-    <h1 class="h1 pt-4">Testimonials</h1>
-    <!--Section description-->
-
     <!--Carousel Wrapper-->
     <mdb-carousel class="carousel no-flex testimonial-carousel slide carousel-slide" [animation]="'slide'" [interval]="1500" [isControls]="true">
       <!--First slide-->
-      <mdb-slide>
+      <mdb-slide *ngFor="let testimonial of testimonials">
         <div class="testimonial">
           <!--Avatar-->
           <div class="avatar mx-auto">
 
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid" alt="First sample avatar image">
+            <img src="{{testimonial.image}}" class="rounded-circle img-fluid" alt="{{testimonial.name}}" >
 
           </div>
           <!--Content-->
-          <p>
-            <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat
-            ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet molestias
-            voluptatum inventore laboriosam labore sit, aspernatur praesentium iste impedit quidem dolor veniam.
+          <p class="message">
+            <i class="fa fa-quote-left"></i>
+            {{testimonial.message}}
+            <i class="fa fa-quote-right"></i> 
           </p>
 
-          <h4>Anna Deynah</h4>
-          <h6>Founder at ET Company</h6>
-
-          <!--Review-->
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star-half-full"> </i>
+          <h4>{{testimonial.name.split("-")[0]}}</h4>
+          <h6>{{testimonial.name.split("-")[1]}}</h6>
         </div>
       </mdb-slide>
       <!--/First slide-->
-      <!--Second slide-->
-      <mdb-slide>
-        <div class="testimonial">
-          <!--Avatar-->
-          <div class="avatar mx-auto">
-
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid" alt="Second sample avatar image">
-
-          </div>
-          <!--Content-->
-          <p>
-            <i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-            amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore. </p>
-
-          <h4>Maria Kate</h4>
-          <h6>Photographer at Studio LA</h6>
-
-          <!--Review-->
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-        </div>
-      </mdb-slide>
-      <!--/Second slide-->
-      <!--Third slide-->
-      <mdb-slide>
-        <div class="testimonial">
-          <!--Avatar-->
-          <div class="avatar mx-auto">
-
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid" alt="Third sample avatar image">
-
-          </div>
-          <!--Content-->
-          <p>
-            <i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-
-          <h4>John Doe</h4>
-          <h6>Front-end Developer in NY</h6>
-
-          <!--Review-->
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star"> </i>
-          <i class="fa fa-star-o"> </i>
-        </div>
-      </mdb-slide>
-      <!--/Third slide-->
     </mdb-carousel>
     <!--Carousel Wrapper-->
-
   </section>
   <!--Section: Testimonials v.2-->
-
 </div>
