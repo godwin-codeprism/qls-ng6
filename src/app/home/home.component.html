@@ -79,7 +79,7 @@
         </div>
       </mdb-slide>
 
-      <!--/slide template--> 
+      <!--/slide template-->
     </mdb-carousel>
     <!--/.Carousel Wrapper-->
   </div>
@@ -127,7 +127,7 @@
             <!--Text-->
             <p class="card-text course-text">{{course.text}}</p>
             <hr>
-            <a class="btn qls-primary waves-light" mdbRippleRadius>Learn More</a>
+            <button class="btn qls-primary waves-light" mat-raised-button color="accent">Learn More</button>
           </div>
 
         </div>
@@ -140,21 +140,22 @@
   <!--Section: Testimonials v.2-->
   <section class="text-center pb-5">
     <!--Carousel Wrapper-->
-    <mdb-carousel class="carousel no-flex testimonial-carousel slide carousel-slide" [animation]="'slide'" [interval]="1500" [isControls]="true">
+    <mdb-carousel class="carousel no-flex testimonial-carousel slide carousel-slide" [animation]="'slide'" [interval]="1500"
+      [isControls]="true">
       <!--First slide-->
       <mdb-slide *ngFor="let testimonial of testimonials">
         <div class="testimonial">
           <!--Avatar-->
           <div class="avatar mx-auto">
 
-            <img src="{{testimonial.image}}" class="rounded-circle img-fluid" alt="{{testimonial.name}}" >
+            <img src="{{testimonial.image}}" class="rounded-circle img-fluid" alt="{{testimonial.name}}">
 
           </div>
           <!--Content-->
           <p class="message">
             <i class="fa fa-quote-left"></i>
             {{testimonial.message}}
-            <i class="fa fa-quote-right"></i> 
+            <i class="fa fa-quote-right"></i>
           </p>
 
           <h4>{{testimonial.name.split("-")[0]}}</h4>
@@ -166,4 +167,15 @@
     <!--Carousel Wrapper-->
   </section>
   <!--Section: Testimonials v.2-->
+</div>
+<div class="container container-clients">
+  <h3>Our Clients</h3>
+  <br>
+  <div class="row">
+    <div class="col-sm-2" *ngFor="let client of clients">
+      <mat-card>
+        <img src="{{client.logo}}" class="img-responsive" style="width:100%;padding:5px;" alt="{{client.name}}">
+      </mat-card>
+    </div>
+  </div>
 </div>

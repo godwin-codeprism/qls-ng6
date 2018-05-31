@@ -24,6 +24,7 @@
               "node_modules/font-awesome/scss/font-awesome.scss",
               "node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
               "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
+              "src/theme.scss",
               "src/styles.scss",
               "src/assets/fonts/fonts.css"
             ],
@@ -85,6 +86,7 @@
               "node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
               "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
               "src/styles.scss",
+              "src/theme.scss",
               "src/assets/fonts/fonts.css"
             ],
             "assets": [

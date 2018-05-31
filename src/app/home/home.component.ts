@@ -20,6 +20,10 @@ interface ITestimonials{
   message: string,
   image:string         
 }
+interface IClients{
+  name:string,
+  logo:string
+}
 @Component({
   selector: 'qls-home',
   templateUrl: './home.component.html',
@@ -60,11 +64,14 @@ export class HomeComponent implements OnInit {
   public courses: any[];
   public coursesQuery: string;
   public testimonials: any[];
+  public clients: any[];
 
   private courses_orginal:any[];
   private events_url: string = '../../assets/data/events.json';
   private courses_url: string = '../../assets/data/courses.json';
-  private testimonials_url: string = '../../assets/data/testimonials/testimonials.json'
+  private testimonials_url: string = '../../assets/data/testimonials/testimonials.json';
+  private clients_url:string = '../../assets/data/clients/clients.json';
+
   constructor(private http: HttpClient) { }
   testVar: string = "Vinny Carole Godwin";
   ngOnInit() {
@@ -78,7 +85,9 @@ export class HomeComponent implements OnInit {
     })
     this.getTestimonials().subscribe(data => {
       this.testimonials = data;
-      console.log(this.testimonials);
+    })
+    this.getClients().subscribe(data => {
+      this.clients = data;
     })
   }
   filterCourseCards(e: any) {
@@ -93,6 +102,9 @@ export class HomeComponent implements OnInit {
   }
   getTestimonials(): Observable<ITestimonials[]>{
     return this.http.get<ITestimonials[]>(this.testimonials_url);
+  }
+  getClients():Observable<IClients[]>{
+    return this.http.get<IClients[]>(this.clients_url);
   }
   injectSliderData(arr: any[]) {
     arr.forEach((obj, inx) => {

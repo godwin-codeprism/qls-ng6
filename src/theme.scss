@@ -1,0 +1,54 @@
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import '~@angular/material/theming';
+@import './assets/fonts/fonts.css';
+
+$general-typography: mat-typography-config(
+  $font-family: '"Raleway",sans-serif',
+  $body-2:        mat-typography-level(14px, 24px, 700)  
+);
+$secondary-typography: mat-typography-config(
+  $font-family: 'Roboto, sans-serif'
+);
+@include mat-core($general-typography);
+
+$qls-primary-color:(
+    50: #afd6fe,
+  100: #7bb5ef,
+  200: #6da6de,
+  300: #5389bf,
+  400: #5687b9,
+  500: #4f759c,
+  600: #45627f,
+  700: #3c556e,
+  800: #314559,
+  900: #2C3E50,
+  A100: #2C3E50,
+  A200: #2C3E50,
+  A400: #2C3E50,
+  A700: #2C3E50,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$qls-primary: mat-palette($qls-primary-color, 900);
+$qls-accent:  mat-palette($qls-primary-color, A200, A100, A400);
+
+$qls-warn:    mat-palette($mat-red);
+
+$qls-theme: mat-light-theme($qls-primary, $qls-accent, $qls-warn);
+
+@include angular-material-theme($qls-theme);
