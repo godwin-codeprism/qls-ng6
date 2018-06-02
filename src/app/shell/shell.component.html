@@ -64,12 +64,12 @@
 
               <!-- Set 3 -->
               <mat-menu #ITILInter="matMenu">
-                  <a mat-menu-item [matMenuTriggerFor]="ITILLM">ITIL Lifecycle Modules</a>
-                  <a mat-menu-item [matMenuTriggerFor]="ITILCM">ITIL Capability Module</a>
-                </mat-menu>
-                <mat-menu #ITILExp="matMenu">
-                  <a mat-menu-item>ITIL ® Managing Across The Lifecycle</a>
-                </mat-menu>
+                <a mat-menu-item [matMenuTriggerFor]="ITILLM">ITIL Lifecycle Modules</a>
+                <a mat-menu-item [matMenuTriggerFor]="ITILCM">ITIL Capability Module</a>
+              </mat-menu>
+              <mat-menu #ITILExp="matMenu">
+                <a mat-menu-item>ITIL ® Managing Across The Lifecycle</a>
+              </mat-menu>
               <!-- ** -->
 
               <!-- Set 4 -->
@@ -106,141 +106,142 @@
 </nav>
 <router-outlet></router-outlet>
 <footer class="container-fluid text-center">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="container-fluid text-left" style="font-size:small">
-                    <h3>Popular Courses</h3>
-                    <ul class="popular-courses">
-                        <li>
-                            <a ui-sref="app.itil_foundation">ITIL Foundation</a>
-                        </li>
-                        <li>
-                            <a ui-sref="app.pmp">PMP</a>
-                        </li>
-                        <li>
-                            <a ui-sref="app.prince2foundation">Prince2</a>
-                        </li>
-                        <li>
-                            <a ui-sref="app.dev_ops">DevOps Master</a>
-                        </li>
-                        <li>
-                            <a ui-sref="app.scrum">Certified Scrum Master</a>
-                        </li>
-                        <li>
-                            <a ui-sref="app.safe">Safe Agile</a>
-                        </li>
-                        <li>
-                            <a ui-sref="app.green_belt">Lean Six Sigma Green Belt</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h3 class="text-center">Finds us on</h3>
-                <ul class="social-network social-circle">
-                    <li>
-                        <a href="https://www.facebook.com/QuickLearn-Systems-860154054085242" class="icoFacebook" title="Facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/quicklearnsys" class="icoTwitter" title="Twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/109738846000587914274" class="icoGoogle" title="Google +">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://in.linkedin.com/in/quicklearn-systems-1494ba12a" class="icoLinkedin" title="Linkedin">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-                <h3 class="text-center">Payment Options</h3>
-                <small>We accept Payment by Cash, Cheque,
-                    <br/>Online Fund Transfer and Credit Cards</small>
-                <br/>
-                <ul class="social-network social-circle">
-                    <li>
-                        <a href="#" class="icoTwitter" title="Visa">
-                            <i class="fa fa-cc-visa"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icoTwitter" title="Master Card">
-                            <i class="	fa fa-cc-mastercard"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icoTwitter" title="Google Wallet">
-                            <i class="fa fa-google-wallet"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icoTwitter" title="PayPal">
-                            <i class="fa fa-paypal"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-2">
-                <h3 class="text-left">Company</h3>
-                <ul class="footer-company">
-                    <li>
-                        <a ui-sref="app.about">About Us</a>
-                    </li>
-                    <li>
-                        <a ui-sref="app.home">Courses</a>
-                    </li>
-                    <li>
-                        <a ui-sref="app.upcoming_events">Upcoming Events</a>
-                    </li>
-                    <li>
-                        <a ui-sref="app.contact">Contact Us</a>
-                    </li>
-                    <li>
-                        <a ui-sref="app.terms">Term and conditions</a>
-                    </li>
-                    <li>
-                        <a ui-sref="app.privacy">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a ui-sref="app.accreditations">Accreditation</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <h3 class="text-left">Quick Enquiry</h3>
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" ng-model="siteContact.fullname" required>
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" ng-model="siteContact.email" required>
-                    </div>
-                </div>
-                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" ng-model="siteContact.message"></textarea>
-                <br>
-                <div class="row">
-                    <div class="col-sm-12 form-group">
-                        <button type="submit" class="btn btn-primary btn-block btn-sm" ng-class="siteContactSubmit == 'Submit' ? 'btn-primary' :'btn-success'"
-                            ng-disabled="siteContactSubmit !== 'Submit'" type="submit" ng-click="contactSubmit()">
-                            <i class="fa fa-cog fa-spin fa-lg fa-fw" ng-show="contactSubmitted"></i>
-                            {{siteContactSubmit}}</button>
-                    </div>
-                </div>
-            </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="container-fluid text-left" style="font-size:small">
+          <h3>Popular Courses</h3>
+          <ul class="popular-courses">
+            <li>
+              <a ui-sref="app.itil_foundation">ITIL Foundation</a>
+            </li>
+            <li>
+              <a ui-sref="app.pmp">PMP</a>
+            </li>
+            <li>
+              <a ui-sref="app.prince2foundation">Prince2</a>
+            </li>
+            <li>
+              <a ui-sref="app.dev_ops">DevOps Master</a>
+            </li>
+            <li>
+              <a ui-sref="app.scrum">Certified Scrum Master</a>
+            </li>
+            <li>
+              <a ui-sref="app.safe">Safe Agile</a>
+            </li>
+            <li>
+              <a ui-sref="app.green_belt">Lean Six Sigma Green Belt</a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="col-sm-4">
+        <h3 class="text-center">Finds us on</h3>
+        <ul class="social-network social-circle">
+          <li>
+            <a href="https://www.facebook.com/QuickLearn-Systems-860154054085242" class="icoFacebook" title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/quicklearnsys" class="icoTwitter" title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://plus.google.com/109738846000587914274" class="icoGoogle" title="Google +">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://in.linkedin.com/in/quicklearn-systems-1494ba12a" class="icoLinkedin" title="Linkedin">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <h3 class="text-center">Payment Options</h3>
+        <small>We accept Payment by Cash, Cheque,
+          <br/>Online Fund Transfer and Credit Cards</small>
+        <br/>
+        <ul class="social-network social-circle">
+          <li>
+            <a href="#" class="icoTwitter" title="Visa">
+              <i class="fa fa-cc-visa"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icoTwitter" title="Master Card">
+              <i class="	fa fa-cc-mastercard"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icoTwitter" title="Google Wallet">
+              <i class="fa fa-google-wallet"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icoTwitter" title="PayPal">
+              <i class="fa fa-paypal"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h3 class="text-left">Company</h3>
+        <ul class="footer-company">
+          <li>
+            <a ui-sref="app.about">About Us</a>
+          </li>
+          <li>
+            <a ui-sref="app.home">Courses</a>
+          </li>
+          <li>
+            <a ui-sref="app.upcoming_events">Upcoming Events</a>
+          </li>
+          <li>
+            <a ui-sref="app.contact">Contact Us</a>
+          </li>
+          <li>
+            <a ui-sref="app.terms">Term and conditions</a>
+          </li>
+          <li>
+            <a ui-sref="app.privacy">Privacy Policy</a>
+          </li>
+          <li>
+            <a ui-sref="app.accreditations">Accreditation</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <mat-card>
+          <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          <mat-card-title>
+            <h3>Quick Enquiry</h3>
+          </mat-card-title>
+          <mat-divider></mat-divider>
+          <form class="quick-enquiry">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Full Name">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Email">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <textarea matInput placeholder="Your Message"></textarea>
+            </mat-form-field>
+            <button mat-raised-button color="accent" class="btn-block">Submit</button>
+          </form>
+        </mat-card>
+      </div>
     </div>
-    <div class="container-fluid footer-band">
-        <div class="col-lg-12">
-            <h6>&copy; 2018-2019 - QuickLearn Systems. All Rights Reserved. The certification names are the trademarks of
-                their respective owners.
-            </h6>
-        </div>
+  </div>
+  <br>
+  <div class="container-fluid footer-band">
+    <div class="col-lg-12">
+      <h6>&copy; 2018-2019 - QuickLearn Systems. All Rights Reserved. The certification names are the trademarks of their respective
+        owners.
+      </h6>
     </div>
+  </div>
 </footer>

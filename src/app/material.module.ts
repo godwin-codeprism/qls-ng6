@@ -1,11 +1,13 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormControl, FormGroupDirective, NgForm } from '@angular/forms';
 
-import {MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatMenuModule} from '@angular/material';
+import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatMenuModule, MatInputModule, MatProgressBarModule, MatBottomSheetModule } from '@angular/material';
 
 @NgModule({
-    imports:[MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatMenuModule],
-    exports:[MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatMenuModule],
+    providers: [],
+    imports: [MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatMenuModule, MatInputModule, MatProgressBarModule, MatBottomSheetModule],
+    exports: [MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatMenuModule, MatInputModule, MatProgressBarModule, MatBottomSheetModule],
 })
 
-export class MaterialModule {}
+export class MaterialModule { }
