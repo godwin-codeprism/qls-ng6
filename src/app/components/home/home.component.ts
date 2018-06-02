@@ -1,4 +1,5 @@
-import { Component, OnInit, SimpleChange } from '@angular/core';
+import { Component, OnInit, SimpleChange, Input } from '@angular/core';
+import {ActivatedRoute, Params} from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { NgModel } from '@angular/forms';
@@ -24,42 +25,15 @@ interface IClients{
   name:string,
   logo:string
 }
+
 @Component({
   selector: 'qls-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  inputs:[`coursesList`]
 })
+
 export class HomeComponent implements OnInit {
-  public coursesList: string[] = [
-    "Select a course",
-    "ITIL Foundation",
-    "ITIL Service Strategy",
-    "ITIL Service Design",
-    "ITIL Service Transition",
-    "ITIL Service Operation",
-    "ITIL Continual Service Improvement",
-    "ITIL Service, Offering and Agreement (SOA)",
-    "ITIL Planning, Protection and Optimization (PPO)",
-    "ITIL Release, Control and Validation (RCV)",
-    "ITIL Operational, Support and Analysis (OSA)",
-    "ITIL®  Managing Across The Lifecycle",
-    "SIAM Foundation",
-    "CAPM",
-    "PMP",
-    "ACP",
-    "Prince2 Foundation",
-    "Prince2 Practitioner",
-    "Prince2 Agile",
-    "Scrum Master",
-    "Certified Scrum Product Owner (CSPO)",
-    "Managing Successful Programs",
-    "SAFe 4.5 (SAFe Agilist)",
-    "DevOps Master",
-    "Six Sigma Green Belt",
-    "Six Sigma Black Belt",
-    "COBIT 5 Foundation",
-    "TOGAF 9.1 Level  1 & Level 2"
-  ]
   public events: any[];
   public courses: any[];
   public coursesQuery: string;
@@ -72,9 +46,9 @@ export class HomeComponent implements OnInit {
   private testimonials_url: string = '../../assets/data/testimonials/testimonials.json';
   private clients_url:string = '../../assets/data/clients/clients.json';
 
-  constructor(private http: HttpClient) { }
-  testVar: string = "Vinny Carole Godwin";
+  constructor(private http: HttpClient, private route:ActivatedRoute) { }
   ngOnInit() {
+    console.log(this.route.snapshot.data.coursesList);
     this.getEventsData().subscribe(data => {
       this.events = data;
       this.injectSliderData(this.events);

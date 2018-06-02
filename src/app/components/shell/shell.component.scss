@@ -1,4 +1,4 @@
-@import "../../styles";
+@import "../../../styles";
 .nav-link:hover {
   color: map-get($qls-colors, 'hover') !important;
 }

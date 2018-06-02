@@ -7,33 +7,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material.module';
-import { AppComponent } from './app.component';
-import { ShellComponent } from './shell/shell.component';
-import { HomeComponent } from './home/home.component';
+import {AppComponent, ShellComponent, HomeComponent, EnquiryComponent} from './components';
+import QLSRoutes from './config';
+import {coursesList} from './utils'
 
-const qlsRoutes: Routes = [
-  {
-    path: '',
-    component: ShellComponent,
-    children: [
-      {
-        path: '',
-        component: HomeComponent
-      }
-    ]
-  },
-  {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
-  }
-];
+const qlsRoutes: Routes = QLSRoutes;
 
 @NgModule({
   declarations: [
     AppComponent,
     ShellComponent,
-    HomeComponent
+    HomeComponent,
+    EnquiryComponent
+  ],
+  entryComponents: [
+    EnquiryComponent
   ],
   imports: [
     BrowserModule,
