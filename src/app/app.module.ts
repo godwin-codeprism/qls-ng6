@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
 import {AppComponent, ShellComponent, HomeComponent, EnquiryComponent} from './components';
 import QLSRoutes from './config';
-import {coursesList} from './utils'
+import {coursesList} from './utils';
+import { AboutComponent } from './components/about/about.component'
 
 const qlsRoutes: Routes = QLSRoutes;
 
@@ -18,7 +19,8 @@ const qlsRoutes: Routes = QLSRoutes;
     AppComponent,
     ShellComponent,
     HomeComponent,
-    EnquiryComponent
+    EnquiryComponent,
+    AboutComponent
   ],
   entryComponents: [
     EnquiryComponent

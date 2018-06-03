@@ -48,7 +48,6 @@ export class HomeComponent implements OnInit {
 
   constructor(private http: HttpClient, private route:ActivatedRoute) { }
   ngOnInit() {
-    console.log(this.route.snapshot.data.coursesList);
     this.getEventsData().subscribe(data => {
       this.events = data;
       this.injectSliderData(this.events);

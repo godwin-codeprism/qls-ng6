@@ -14,7 +14,7 @@ export class ShellComponent implements OnInit {
   private coursesList: string[];
   
   constructor(private bottomSheet: MatBottomSheet, private route: ActivatedRoute) {
-    this.coursesList = this.route.snapshot.params.coursesList;
+    this.coursesList = this.route.snapshot.data.coursesList;
   }
   ngOnInit() {
   }

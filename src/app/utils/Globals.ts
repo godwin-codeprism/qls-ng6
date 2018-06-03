@@ -1,5 +1,4 @@
 const coursesList = [
-  "Select a course",
   "ITIL Foundation",
   "ITIL Service Strategy",
   "ITIL Service Design",
