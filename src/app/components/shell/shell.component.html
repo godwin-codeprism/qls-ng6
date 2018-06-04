@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" [routerLink]="['/']">
           <img src="../../assets/img/logo_nav.png" alt="Quick LearnSystems">
         </a>
       </div>
@@ -10,12 +10,12 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" mat-button>Home</a>
+              <a class="nav-link" mat-button [routerLink]="['/']">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" mat-button [matMenuTriggerFor]="about">About</a>
               <mat-menu #about="matMenu">
-                <a mat-menu-item>Mission /Vision</a>
+                <a mat-menu-item [routerLink]="[url.about]">Mission /Vision</a>
               </mat-menu>
             </li>
             <li class="nav-item">
@@ -31,34 +31,33 @@
 
               <!-- Set 2 -->
               <mat-menu #SM="matMenu">
-                <a mat-menu-item>ITIL Foundation</a>
+                <a mat-menu-item [routerLink]="[url.ITIL_Foundation]">ITIL Foundation</a>
                 <a mat-menu-item [matMenuTriggerFor]="ITILInter">ITIL Intermediate</a>
                 <a mat-menu-item [matMenuTriggerFor]="ITILExp">ITIL Expert</a>
-                <a mat-menu-item>SIAM Foundation</a>
+                <a mat-menu-item [routerLink]="[url.SIAM]">SIAM Foundation</a>
               </mat-menu>
 
               <mat-menu #PMP="matMenu">
-                <a mat-menu-item>CAPM</a>
-                <a mat-menu-item>PMP</a>
-                <a mat-menu-item>ACP</a>
-                <a mat-menu-item>Prince2 Foundation</a>
-                <a mat-menu-item>Prince2 Practitioner</a>
-                <a mat-menu-item>PRINCE2 Agile Practitioner</a>
-                <a mat-menu-item>Certified Scrum Master</a>
-                <a mat-menu-item>Certified Scrum Product Owner (CSPO)</a>
-                <a mat-menu-item>Managing Successful Programs</a>
-                <a mat-menu-item>SAFe 4.5 (SAFe Agilist)</a>
-                <a mat-menu-item>DevOps Master</a>
+                <a mat-menu-item [routerLink]="[url.CAPM]">CAPM</a>
+                <a mat-menu-item [routerLink]="[url.PMP]">PMP</a>
+                <a mat-menu-item [routerLink]="[url.ACP]">ACP</a>
+                <a mat-menu-item [routerLink]="[url.Prince2F]">Prince2 Foundation</a>
+                <a mat-menu-item [routerLink]="[url.Prince2P]">Prince2 Practitioner</a>
+                <a mat-menu-item [routerLink]="[url.Prince2AP]">PRINCE2 Agile Practitioner</a>
+                <a mat-menu-item [routerLink]="[url.Scrum]">Certified Scrum Master</a>
+                <a mat-menu-item [routerLink]="[url.CSPO]">Certified Scrum Product Owner (CSPO)</a>
+                <a mat-menu-item [routerLink]="[url.MSP]">Managing Successful Programs</a>
+                <a mat-menu-item [routerLink]="[url.SAFe]">SAFe 4.5 (SAFe Agilist)</a>
               </mat-menu>
 
               <mat-menu #QM="matMenu">
-                <a mat-menu-item>Lean Six Sigma Green Belt</a>
-                <a mat-menu-item>Lean Six Sigma Black Belt</a>
+                <a mat-menu-item [routerLink]="[url.Green_Belt]">Lean Six Sigma Green Belt</a>
+                <a mat-menu-item [routerLink]="[url.Black_Belt]">Lean Six Sigma Black Belt</a>
               </mat-menu>
 
               <mat-menu #ITGA="matMenu">
-                <a mat-menu-item>COBIT 5 Foundation</a>
-                <a mat-menu-item>TOGAF 9.1 Level 1 &amp; Level 2</a>
+                <a mat-menu-item [routerLink]="[url.COBIT]">COBIT 5 Foundation</a>
+                <a mat-menu-item [routerLink]="[url.TOGAF]">TOGAF 9.1 Level 1 &amp; Level 2</a>
               </mat-menu>
               <!-- ** -->
 
@@ -68,35 +67,35 @@
                 <a mat-menu-item [matMenuTriggerFor]="ITILCM">ITIL Capability Module</a>
               </mat-menu>
               <mat-menu #ITILExp="matMenu">
-                <a mat-menu-item>ITIL ® Managing Across The Lifecycle</a>
+                <a mat-menu-item [routerLink]="[url.MALC]">ITIL ® Managing Across The Lifecycle</a>
               </mat-menu>
               <!-- ** -->
 
               <!-- Set 4 -->
               <mat-menu #ITILLM="matMenu">
-                <a mat-menu-item>ITIL Service Strategy</a>
-                <a mat-menu-item>ITIL Service Design</a>
-                <a mat-menu-item>ITIL Service Transition</a>
-                <a mat-menu-item>ITIL Service Operation</a>
-                <a mat-menu-item>ITIL Continual Service Improvement</a>
+                <a mat-menu-item [routerLink]="[url.ITIL_Service_Strategy]">ITIL Service Strategy</a>
+                <a mat-menu-item [routerLink]="[url.ITIL_Service_Design]">ITIL Service Design</a>
+                <a mat-menu-item [routerLink]="[url.ITIL_Service_Transition]">ITIL Service Transition</a>
+                <a mat-menu-item [routerLink]="[url.ITIL_Service_Operation]">ITIL Service Operation</a>
+                <a mat-menu-item [routerLink]="[url.ITIL_Continual_Service_Improvement]">ITIL Continual Service Improvement</a>
               </mat-menu>
 
               <mat-menu #ITILCM="matMenu">
-                <a mat-menu-item>ITIL Service, Offering and Agreement (SOA)</a>
-                <a mat-menu-item>ITIL Planning, Protection and Optimization (PPO)</a>
-                <a mat-menu-item>ITIL Release, Control and Validation (RCV)</a>
-                <a mat-menu-item>ITIL Operational, Support and Analysis (OSA)</a>
+                <a mat-menu-item [routerLink]="[url.SOA]">ITIL Service, Offering and Agreement (SOA)</a>
+                <a mat-menu-item [routerLink]="[url.PPO]">ITIL Planning, Protection and Optimization (PPO)</a>
+                <a mat-menu-item [routerLink]="[url.RCV]">ITIL Release, Control and Validation (RCV)</a>
+                <a mat-menu-item [routerLink]="[url.OSA]">ITIL Operational, Support and Analysis (OSA)</a>
               </mat-menu>
               <!-- ** -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" mat-button>Upcoming events</a>
+              <a class="nav-link" mat-button [routerLink]="[url.up_events]">Upcoming events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" mat-button>Services</a>
+              <a class="nav-link" mat-button [routerLink]="[url.services]">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" mat-button>Contact Us</a>
+              <a class="nav-link" mat-button [routerLink]="[url.contact]">Contact Us</a>
             </li>
           </ul>
         </div>

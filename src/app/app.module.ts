@@ -7,10 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material.module';
-import {AppComponent, ShellComponent, HomeComponent, EnquiryComponent} from './components';
-import QLSRoutes from './config';
-import {coursesList} from './utils';
-import { AboutComponent } from './components/about/about.component'
+import { AppComponent, ShellComponent, HomeComponent, EnquiryComponent, AboutComponent, ITILFoundationComponent, ITILServiceStrategyComponent, ITILServiceDesignComponent, ITILServiceTransitionComponent, ITILServiceOperationComponent, ITILContinualServiceImprovementComponent, SOAComponent, PPOComponent, RCVComponent, OSAComponent, MALCComponent, SIAMComponent, CAPMComponent, PMPComponent, ACPComponent, Prince2FComponent, Prince2PComponent, Prince2APComponent, ScrumComponent, CSPOComponent, MSPComponent, SAFeComponent, DevOpsComponent, GreenBeltComponent, BlackBeltComponent, COBITComponent, TOGAFComponent, UpEventsComponent, ServicesComponent, ContactComponent } from './components';
+import { QLSRoutes } from './config';
+import { coursesList } from './utils';
 
 const qlsRoutes: Routes = QLSRoutes;
 
@@ -20,7 +19,37 @@ const qlsRoutes: Routes = QLSRoutes;
     ShellComponent,
     HomeComponent,
     EnquiryComponent,
-    AboutComponent
+    AboutComponent,
+    ITILFoundationComponent,
+    ITILServiceStrategyComponent,
+    ITILServiceDesignComponent,
+    ITILServiceTransitionComponent,
+    ITILServiceOperationComponent,
+    ITILContinualServiceImprovementComponent,
+    SOAComponent,
+    PPOComponent,
+    RCVComponent,
+    OSAComponent,
+    MALCComponent,
+    SIAMComponent,
+    CAPMComponent,
+    PMPComponent,
+    ACPComponent,
+    Prince2FComponent,
+    Prince2PComponent,
+    Prince2APComponent,
+    ScrumComponent,
+    CSPOComponent,
+    MSPComponent,
+    SAFeComponent,
+    DevOpsComponent,
+    GreenBeltComponent,
+    BlackBeltComponent,
+    COBITComponent,
+    TOGAFComponent,
+    UpEventsComponent,
+    ServicesComponent,
+    ContactComponent
   ],
   entryComponents: [
     EnquiryComponent

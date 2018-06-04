@@ -1,22 +1,4 @@
-import { ShellComponent, HomeComponent } from '../components';
-import { coursesList } from '../utils';
+import QLSPaths from './paths';
+import QLSRoutes from './router';
 
-const QLSRoutes = [{
-  path: '',
-  component: ShellComponent,
-  data: {
-    coursesList: coursesList
-  },
-  children: [{
-    path: '',
-    component: HomeComponent
-  }]
-},
-{
-  path: '**',
-  redirectTo: '',
-  pathMatch: 'full'
-}
-];
-
-export default QLSRoutes;
+export {QLSPaths, QLSRoutes}
