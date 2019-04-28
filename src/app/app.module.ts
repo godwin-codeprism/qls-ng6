@@ -10,6 +10,8 @@ import { MaterialModule } from './material.module';
 import { AppComponent, ShellComponent, HomeComponent, EnquiryComponent, AboutComponent, ITILFoundationComponent, ITILServiceStrategyComponent, ITILServiceDesignComponent, ITILServiceTransitionComponent, ITILServiceOperationComponent, ITILContinualServiceImprovementComponent, SOAComponent, PPOComponent, RCVComponent, OSAComponent, MALCComponent, SIAMComponent, CAPMComponent, PMPComponent, ACPComponent, Prince2FComponent, Prince2PComponent, Prince2APComponent, ScrumComponent, CSPOComponent, MSPComponent, SAFeComponent, DevOpsComponent, GreenBeltComponent, BlackBeltComponent, COBITComponent, TOGAFComponent, UpEventsComponent, ServicesComponent, ContactComponent } from './components';
 import { QLSRoutes } from './config';
 import { coursesList } from './utils';
+import { DoiComponent } from './components/doi/doi.component';
+import { Itil4FoundationComponent } from './components/itil4-foundation/itil4-foundation.component';
 
 const qlsRoutes: Routes = QLSRoutes;
 
@@ -49,7 +51,9 @@ const qlsRoutes: Routes = QLSRoutes;
     TOGAFComponent,
     UpEventsComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    DoiComponent,
+    Itil4FoundationComponent
   ],
   entryComponents: [
     EnquiryComponent
